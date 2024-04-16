@@ -31,7 +31,7 @@ namespace Examen_Individual
 
             
             string opcion = Console.ReadLine();
-
+            
             switch (opcion)
             {
                 case "1":
@@ -42,8 +42,8 @@ namespace Examen_Individual
                     Console.WriteLine("3. Flowerpot");
                     Console.WriteLine("4. Vase");
 
-                    string opcionProducto = Console.ReadLine();
-                    switch (opcionProducto)
+                    string opcionProduct = Console.ReadLine();
+                    switch (opcionProduct)
                     {
                         case "1":
                             store.AddProduct(productfabric1);
@@ -72,7 +72,7 @@ namespace Examen_Individual
                 case "3":
                     Console.WriteLine("¿Are you sure you want to complete the purchase? (Y/N)");
                     string confirmacion = Console.ReadLine();
-                    if (confirmacion.ToUpper() == "S")
+                    if (confirmacion.ToUpper() == "Y")
                     {
                         Console.WriteLine("Purchase completed.");
                     }
